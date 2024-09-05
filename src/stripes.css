@@ -1,0 +1,51 @@
+.stripes-wrapper {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stripe-1 {
+    background-color: rgba(203, 182, 255, 1);
+    width: 105vw;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(5deg) translateY(75px);
+  }
+  
+  .stripe-1 span {
+    font-family: var(--floresete-font);
+    font-size: 40px;
+    text-transform: uppercase;
+    transform: translateY(5px);
+  }
+  
+  .stripe-1 svg {
+    transform: rotate(-5deg);
+  }
+  
+  .stripe-2 {
+    background-color: rgba(174, 206, 255, 1);
+    width: 105vw;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(-5deg);
+  }
+  
+  .stripe-2 span {
+    font-family: var(--floresete-font);
+    font-size: 40px;
+    text-transform: uppercase;
+    transform: translateY(5px);
+  }
+  
+  .stripe-2 svg {
+    transform: rotate(-5deg);
+  }
+  
+  

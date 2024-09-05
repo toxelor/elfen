@@ -1,0 +1,39 @@
+:root {
+  --main-bg-color: #ae97e8;
+  --first-slide-color: #bea8f5;
+  --second-slide-color: #fa8eef;
+  --third-slide-color: #aeceff;
+  --outline-color: #d9ff5a;
+  --bg-text-color-1: #CBB6FF;
+  --bg-text-color-2: #FFA8F6;
+  --bg-text-color-3: #C8DEFF;
+  --murmure-font: 'Le Murmure', sans-serif;
+  --euclid-font: 'Euclid Circular A', sans-serif;
+  --floresete-font: 'Floreste', sans-serif;
+  --cards-animation-bezier: all 1200ms cubic-bezier(0,-0.01, .35 ,1.2);                                                                          
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--main-bg-color);
+  box-sizing: border-box;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 67px;
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+
+span {
+  color: #ffffff;
+  font-family: var(--euclid-font);
+  font-size: 15px;
+}
+

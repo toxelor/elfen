@@ -1,0 +1,263 @@
+.item-card-wrapper.active {
+    opacity: 1;
+    scale: 1;
+  
+    width: 100vw;
+    height: 100vh;
+    transition: all 500ms;
+  }
+  
+  .item-card-wrapper {
+    opacity: 0;
+    scale: 0;
+  
+    width: 0;
+    height: 0;
+    position: fixed;
+    z-index: 5;
+    top:0;
+    transition: all 500ms;
+  }
+  
+  .item-card {
+    padding-top: 20vh;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    transition: var(--cards-animation-bezier);
+    background-color: var(--main-bg-color);
+  }
+  
+  .item-card-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 5vh;
+    z-index: 2;
+  }
+  
+  .item-card-image-div {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 290px;
+    max-height: 425px;
+    transition: var(--cards-animation-bezier);
+    transform: scale(1.7);
+  }
+  
+  .item-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    transition: var(--cards-animation-bezier);
+  }
+  
+  .item-card-image-text {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 10.2vw;
+    left: -90%;
+    top: 51%;
+    text-wrap: nowrap;
+    z-index: 1;
+    color: rgba(203, 182, 255, 0.4);
+    font-family: var(--floresete-font);
+    transition: all 600ms;
+  }
+  
+  .item-card-info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 275px;
+    width: 100%;
+    transition: var(--cards-animation-bezier);
+    transform: translate(-36vw, 15vh);
+  }
+  
+  .item-card-info-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 275px;
+    width: 100%;
+    transition: var(--cards-animation-bezier);
+  }
+  
+  
+  .item-card-info-name {
+    font-family: var(--floresete-font);
+    text-transform: uppercase;
+    font-size: 100px;
+  }
+  
+  .item-card-info-desc {
+    font-size: 15px;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+  }
+  
+  .item-card-info-price {
+    font-family: var(--floresete-font);
+    font-size: 28px;
+    font-weight: 400;
+    position: relative;
+    color: var(--outline-color)
+  }
+  
+  .item-card-info-ruble {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: -7px;
+    right: -15px;
+    color: var(--outline-color)
+  }
+  
+  .item-card-buy-button {
+    opacity: 1;
+    transform: translate(40vw, -5vh);
+    position: relative;
+    background-color: transparent;
+    gap: 11px;
+    font-family: var(--euclid-font);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 3;
+    border: none;
+    transition: var(--cards-animation-bezier);
+    cursor: pointer;
+  }
+  
+  .item-card-center-text {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 5vh;
+  }
+  
+  .item-card-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    font-family: var(--euclid-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.82px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(218, 209, 242, 1);
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    top: 5vh;
+    right: 5vh;
+  }
+  
+  .item-card-close svg {
+    transform: translateY(-2px);
+  }
+  
+  .like-button-div {
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    top: 12vh;
+    right: 3vh;
+    fill: var(--outline-color);
+    transform: scale(0.8);
+  }
+  
+  .like-button-div-circle {
+    fill: rgba(255, 255, 255, 0.2);
+    stroke: var(--outline-color)
+  }
+  
+  .like-button-div-heart {
+    position: absolute;
+    top: 29px;
+    left: 26px;
+    fill: var(--outline-color)
+  }
+  
+  .like-button-div.active .like-button-div-circle {
+    stroke: rgba(255, 177, 247, 1);
+  }
+  
+  .like-button-div.active .like-button-div-heart {
+    fill: rgba(255, 177, 247, 1);
+  }
+  
+  .item-card-height {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: var(--euclid-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.82px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    top: 27vh;
+    right: 4vh;
+  }
+  
+  .item-card-article {
+    position: absolute;
+    top: 15vh;
+    left: 5vh;
+    text-transform: uppercase;
+    font-family: var(--euclid-font);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.02px;
+    text-align: left;
+  }
+  
+  .item-card-color {
+    position: absolute;
+    top: 20vh;
+    left: 5vh;
+    text-transform: uppercase;
+    font-family: var(--euclid-font);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.02px;
+    text-align: left;
+  }
+  
+  .item-card-color-circle {
+    margin-left: 10px;
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    position: absolute;
+    right: -40px;
+    background-color: rgba(147, 129, 216, 1);
+  }
+  
+  .item-card-color-name {
+    position: absolute;
+    right: -125px;
+  }
+  
+  
+  

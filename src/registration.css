@@ -1,0 +1,111 @@
+.registration-wrapper {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    max-width: 550px;
+    max-height: 460px;
+    width: 100vw;
+    height: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(51, 32, 101, 0.25);
+    border-radius: 30px;
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 500ms;
+  }
+  
+  .registration-wrapper.active {
+    opacity: 1;
+    height: 100vh;
+    transform: scale(1);
+  }
+  
+  .registration-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+  }
+  
+  .registration-heading {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.82px;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+  
+  .registration-input-div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 18px;
+    gap: 20px;
+  }
+  
+  .registration-input {
+    background-color: transparent;
+    padding: 10px 5px;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid var(--outline-color);
+    font-family: var(--euclid-font);
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .registration-input::placeholder {
+    text-transform: uppercase;
+    font-family: var(--euclid-font);
+    color: #ffffff;
+    font-size: 15px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+  
+  .registration-button-div {
+    margin-top: 40px;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .registration-button {
+    background-color: transparent;
+    font-family: var(--euclid-font);
+    color: #ffffff;
+    font-size: 15px;
+    position: relative;
+    z-index: 3;
+    border: none;
+  }
+  
+  .registration-button-ellips {
+    position: absolute;
+    z-index: 2;
+    top: -38px;
+    left: -42px;
+    transform: scale(0.7);
+  }
+  
+  .registration-to-login {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .registration-to-login span {
+    text-transform: uppercase;
+  
+  }
+  
+  .registration-to-login svg {
+    margin-right: 10px;
+    transform: translateY(2px);
+  }

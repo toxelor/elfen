@@ -1,0 +1,52 @@
+
+  
+  
+  .wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    top: 53px;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+    z-index: 2;
+  }
+
+  .header.active {
+    z-index: 20;
+  }
+
+  .header svg {
+    cursor: pointer;
+  }
+  
+  .header div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-family: var(--murmure-font);
+    font-size: 45px;
+  }
+  
+  .catalogue-div,
+  .search-div {
+    gap: 12px
+  }
+  
+  .info-div {
+    gap: 30px;
+  }
+  
+  .interactions-div {
+    gap: 36px;
+  }
